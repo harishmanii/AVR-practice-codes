@@ -1,0 +1,77 @@
+<circuit version="1.1.0-SR1" rev="2005" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="MCU" CircId="mega328-23" mainComp="false" Show_id="true" Show_Val="false" Pos="-308,-204" rotation="0" hflip="1" vflip="1" label="mega328-23" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="1 MHz" Program="Users/harish-18977/PlayGround/iot/AVR/Basic-IO/advanced-blinks/main.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" Clk_Out="false" MainMcu="true" SerialMon="-1" />
+
+<item itemtype="Ground" CircId="Ground-25" mainComp="false" Show_id="false" Show_Val="false" Pos="-96,28" rotation="0" hflip="1" vflip="1" label="Ground-25" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Led" CircId="Led-55" mainComp="false" Show_id="false" Show_Val="false" Pos="20,-164" rotation="0" hflip="1" vflip="1" label="Led-55" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="30 mA" Resistance="0.6 Ω" />
+
+<item itemtype="Led" CircId="Led-56" mainComp="false" Show_id="false" Show_Val="false" Pos="20,-136" rotation="0" hflip="1" vflip="1" label="Led-56" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="30 mA" Resistance="0.6 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-57" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-36,-164" rotation="0" hflip="1" vflip="1" label="Resistor-57" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-59" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-36,-136" rotation="0" hflip="1" vflip="1" label="Resistor-59" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Switch" CircId="Switch-71" mainComp="false" Show_id="false" Show_Val="false" Pos="-148,-76" rotation="0" hflip="1" vflip="1" label="Switch-71" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" DT="false" Poles="1" />
+
+<item itemtype="Switch" CircId="Switch-74" mainComp="false" Show_id="false" Show_Val="false" Pos="-148,-112" rotation="0" hflip="1" vflip="1" label="Switch-74" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" DT="false" Poles="1" />
+
+<item itemtype="Switch" CircId="Switch-77" mainComp="false" Show_id="false" Show_Val="false" Pos="-144,-148" rotation="0" hflip="1" vflip="1" label="Switch-77" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" DT="false" Poles="1" />
+
+<item itemtype="Switch" CircId="Switch-79" mainComp="false" Show_id="false" Show_Val="false" Pos="-140,-184" rotation="0" hflip="1" vflip="1" label="Switch-79" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" DT="false" Poles="1" />
+
+<item itemtype="SerialPort" CircId="SerialPort-85" mainComp="false" Show_id="false" Show_Val="false" Pos="-360,-248" rotation="0" hflip="1" vflip="1" label="SerialPort-85" idLabPos="-20,-32" labelrot="0" valLabPos="-16,20" valLabRot="0" Auto="false" Port="/dev/ttys010" Baudrate="9600 _Bd" DataBits="8 _bits" StopBits="1 _bits" SerialMon="false" />
+
+<item itemtype="Node" CircId="Node-72" mainComp="false" Pos="-96,-76" />
+
+<item itemtype="Node" CircId="Node-76" mainComp="false" Pos="-96,-112" />
+
+<item itemtype="Node" CircId="Node-80" mainComp="false" Pos="-96,-148" />
+
+<item itemtype="Node" CircId="Node-88" mainComp="false" Pos="-96,0" />
+
+<item itemtype="Node" CircId="Node-89" mainComp="false" Pos="60,-136" />
+
+<item itemtype="Connector" uid="Connector-135" startpinid="Resistor-57-rPin" endpinid="Led-55-lPin" pointList="-20,-164,4,-164" />
+
+<item itemtype="Connector" uid="Connector-139" startpinid="Resistor-59-rPin" endpinid="Led-56-lPin" pointList="-20,-136,4,-136" />
+
+<item itemtype="Connector" uid="Connector-183" startpinid="Switch-71-switch0pinN" endpinid="Node-72-1" pointList="-132,-76,-96,-76" />
+
+<item itemtype="Connector" uid="Connector-195" startpinid="Switch-74-switch0pinN" endpinid="Node-76-1" pointList="-132,-112,-96,-112" />
+
+<item itemtype="Connector" uid="Connector-197" startpinid="Node-76-2" endpinid="Node-72-0" pointList="-96,-112,-96,-76" />
+
+<item itemtype="Connector" uid="Connector-198" startpinid="mega328-23-PORTB1" endpinid="Switch-74-pinP0" pointList="-268,-92,-168,-92,-168,-112,-164,-112" />
+
+<item itemtype="Connector" uid="Connector-203" startpinid="mega328-23-PORTB2" endpinid="Switch-77-pinP0" pointList="-268,-100,-180,-100,-180,-148,-160,-148" />
+
+<item itemtype="Connector" uid="Connector-206" startpinid="Node-76-0" endpinid="Node-80-0" pointList="-96,-112,-96,-148" />
+
+<item itemtype="Connector" uid="Connector-207" startpinid="Node-80-2" endpinid="Switch-77-switch0pinN" pointList="-96,-148,-128,-148" />
+
+<item itemtype="Connector" uid="Connector-212" startpinid="Switch-79-switch0pinN" endpinid="Node-80-1" pointList="-124,-184,-96,-184,-96,-148" />
+
+<item itemtype="Connector" uid="Connector-216" startpinid="mega328-23-PORTB3" endpinid="Switch-79-pinP0" pointList="-268,-108,-188,-108,-188,-184,-156,-184" />
+
+<item itemtype="Connector" uid="Connector-221" startpinid="mega328-23-PORTD0" endpinid="SerialPort-85-pin0" pointList="-316,-188,-424,-188,-424,-256,-400,-256" />
+
+<item itemtype="Connector" uid="Connector-222" startpinid="SerialPort-85-pin1" endpinid="mega328-23-PORTD1" pointList="-400,-240,-456,-240,-456,-180,-316,-180" />
+
+<item itemtype="Connector" uid="Connector-224" startpinid="Switch-71-pinP0" endpinid="mega328-23-PORTB0" pointList="-164,-76,-316,-76,-316,-92" />
+
+<item itemtype="Connector" uid="Connector-236" startpinid="Node-72-2" endpinid="Node-88-0" pointList="-96,-76,-96,0" />
+
+<item itemtype="Connector" uid="Connector-237" startpinid="Node-88-2" endpinid="Ground-25-Gnd" pointList="-96,0,-96,12" />
+
+<item itemtype="Connector" uid="Connector-238" startpinid="Led-55-rPin" endpinid="Node-89-1" pointList="36,-164,60,-164,60,-136" />
+
+<item itemtype="Connector" uid="Connector-239" startpinid="Led-56-rPin" endpinid="Node-89-0" pointList="36,-136,60,-136" />
+
+<item itemtype="Connector" uid="Connector-240" startpinid="Node-89-2" endpinid="Node-88-1" pointList="60,-136,60,0,-96,0" />
+
+<item itemtype="Connector" uid="Connector-242" startpinid="mega328-23-PORTC2" endpinid="Resistor-57-lPin" pointList="-268,-172,-212,-172,-212,-220,-52,-220,-52,-164" />
+
+<item itemtype="Connector" uid="Connector-243" startpinid="mega328-23-PORTC1" endpinid="Resistor-59-lPin" pointList="-268,-164,-204,-164,-204,-200,-68,-200,-68,-136,-52,-136" />
+
+</circuit>
